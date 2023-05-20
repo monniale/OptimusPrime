@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import { NavBar } from './components/NavBar';
 import './App.css';
 
 function App() {
+const Nav  = NavBar;
+
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <Nav></Nav>
     </div>
   );
 }
