@@ -15,22 +15,22 @@ export const  NavBar = () => {
         <Bars />
   
         <NavMenu>
-          <NavLink to='/about' activeStyle>
+          <NavLink to='/about' >
             About
           </NavLink>
-          <NavLink to='/events' activeStyle>
+          <NavLink to='/events' >
             Events
           </NavLink>
-          <NavLink to='/annual' activeStyle>
+          <NavLink to='/annual' >
             Annual Report
           </NavLink>
-          <NavLink to='/team' activeStyle>
+          <NavLink to='/team' >
             Teams
           </NavLink>
-          <NavLink to='/blogs' activeStyle>
+          <NavLink to='/blogs' >
             Blogs
           </NavLink>
-          <NavLink to='/sign-up' activeStyle>
+          <NavLink to='/sign-up' >
             Sign Up
           </NavLink>
           {/* Second Nav */}
