@@ -22,12 +22,12 @@ export const Team = () => {
           <div className="column">
             <img src={dallamuta} alt="" />
             <p>Dalla Muta Thomas</p>
-            <p className="SubTeam">ReactDev</p>
+            <p className="SubTeam">Math Expert</p>
           </div>
           <div className="column">
             <img src={dainese} alt="" />
             <p>Dainese Riccardo</p>
-            <p className="SubTeam">ReactDev</p>
+            <p className="SubTeam">Keynote Manager</p>
           </div>
         </div>
       </div>

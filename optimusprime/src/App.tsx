@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavBar } from './components/NavBar';
 import { Team } from './components/Team';
+import { Video } from './components/Video';
 
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
       <div>
         <p>Abbiamo cercato di realizzare...</p>
       </div>
+      <Video></Video>
       <Team></Team>
     </div>
   );
