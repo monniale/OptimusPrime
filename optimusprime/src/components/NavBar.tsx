@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from '../images/monni.png'
 import './navbar.css';
 
 export const  NavBar = () => {
     return (
         <>
       <div className='Nav'>
-        <h1>OptimusPrime</h1>
+        <img src={logo} alt='Logo' />
       </div>
     </>
     );

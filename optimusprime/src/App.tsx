@@ -11,7 +11,9 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
       <div>
-        <p>Abbiamo cercato di realizzare...</p>
+        <h1>OptimusPrime</h1>
+        <p className="SubTitle">Risolviamo problemi di ottimo in modo da semplificare la vita alle persone, in modo semplice ed efficace.
+Quest’oggi presentiamo un problema di ottimo riguardante il volume di un Cilindro</p>
       </div>
       <Video></Video>
       <Team></Team>
