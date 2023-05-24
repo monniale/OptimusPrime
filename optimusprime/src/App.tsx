@@ -17,9 +17,8 @@ function App() {
 Quest’oggi presentiamo un problema di ottimo riguardante il volume di un Cilindro</p>
       </div>
 
-      <BigCards order="0" upperTitle1="ciao" title1="" comp1="" upperTitle2="cane" title2="" comp2="../images/videoprova.mp4">
-
-      </BigCards>
+      <BigCards order="0" upperTitle1="Problema" title1="Titolo dell'Esercizio" comp1="prova" upperTitle2="BrainStorming" title2="Cosa abbiamo pensato?" comp2="prova" />
+      <BigCards order="1" upperTitle1="Problema" title1="Titolo dell'Esercizio" comp1="prova" upperTitle2="BrainStorming" title2="Cosa abbiamo pensato?" comp2="prova" />
 
 
       <Video></Video>

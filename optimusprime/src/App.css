@@ -4,13 +4,11 @@
   padding: 0px 10vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 p {
   color: #86868b;
+  
 }
 
 body {
@@ -36,7 +34,7 @@ body {
   align-items: center;
 }
 
-img {
+.TeamImage {
   max-width: 100px;
   aspect-ratio: 1/1.2;
 }
@@ -50,6 +48,7 @@ img {
 
 
 iframe{
+  margin: 50px 0px;
   box-shadow: #1d1d1fb6 5px 5px 10px 0px;
 }
 h1{
@@ -61,11 +60,43 @@ h1{
   padding: 0px 20px 0px 20px;
   margin: auto;
 }
+
+h2.SubHeader{
+  color: #1d1d1f;
+  font-weight: 700;
+  font-size: 3rem;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px 0px 20px;
+  margin: auto;
+}
+
 p.SubTitle{
   font-size: 1.5rem;
   align-items: center;
   text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
+
+.BigCard{
+  border-radius: 18px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
+}
+.CardContainer {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* spazio tra le card */
+}
+
 
 @media screen and (max-width: 600px) {
   h1{
@@ -76,6 +107,9 @@ p.SubTitle{
   }
   .App {
     padding: 0px 5vh;
+  }
+  h2.SubHeader{
+    font-size: 2rem;
   }
 }
   
