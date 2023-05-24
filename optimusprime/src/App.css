@@ -80,7 +80,7 @@ p.SubTitle{
 }
 
 .BigCard{
-  border-radius: 18px;
+  border-radius: 15px;
   padding: 20px;
   margin: 20px;
   display: flex;
@@ -89,12 +89,55 @@ p.SubTitle{
   align-items: center;
   flex: 1;
   max-width: 400px;
+  box-shadow:  20px 20px 30px #d9d9d9,
+             -20px -20px 30px #ffffff;
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+              transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
+.BigCard:hover{
+  border-radius: 30px;
+  transform: scale(1.05);
+}
+
+.SmallCard{
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
+  box-shadow:  20px 20px 20px #d9d9d9,
+             -20px -20px 20px #ffffff;
+  transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+              transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.SmallCardSubTitle{
+  color: #0066cc;
+}
+
+
 .CardContainer {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
   gap: 10px; /* spazio tra le card */
+}
+
+video{
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
 }
 
 
