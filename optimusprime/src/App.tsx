@@ -6,8 +6,6 @@ import { BigCards } from './components/BigCards';
 
 import './App.css';
 import { SmallCard } from './components/SmallCard';
-import audio from './components/assets/audio.mp3';
-import video from './components/assets/video.mp4';
 
 function App() {
 
@@ -36,12 +34,7 @@ function App() {
 
       <Video></Video>
 
-      <div className="audio-container">
-                <audio controls={true}>
-                    <source type="audio/mp3" src={audio} />
-                    Your browser does not support the audio element.
-                </audio>
-      </div>
+    
       
       <Team></Team>
     </div>

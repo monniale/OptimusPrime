@@ -149,10 +149,14 @@ video{
     font-size: 1rem;
   }
   .App {
-    padding: 0px 5vh;
+    padding: 0px 4vh;
   }
   h2.SubHeader{
     font-size: 2rem;
+  }
+  video{
+    max-width: 200px;
+    padding: 0px;
   }
 }
   
