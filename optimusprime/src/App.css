@@ -41,9 +41,15 @@ body {
              17px -17px 30px #ffffff;
 }
 
+
+.column:hover{
+  transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+
 .TeamImage {
   max-width: 100px;
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1.1;
 }
 
 .SubTeam {
@@ -165,7 +171,7 @@ div.Footer > p{
     font-size: 1rem;
   }
   .App {
-    padding: 0px 4vh;
+    padding: 0px 20px;
   }
   h2.SubHeader{
     font-size: 2rem;
@@ -173,6 +179,12 @@ div.Footer > p{
   video{
     max-width: 200px;
     padding: 0px;
+  }
+
+  .column{
+    height: 200px;
+    padding: 0px 10px;
+    margin-bottom: 30px;
   }
 }
   
