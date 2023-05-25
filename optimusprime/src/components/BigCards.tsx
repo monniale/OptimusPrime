@@ -12,8 +12,8 @@ const whiteCard = {
 }
 
 let alreadyClicked = false;
-function startVideo() {
-    const video = document.getElementsByTagName('video')[0];
+function startVideo(index:any) {
+    const video = document.getElementsByTagName('video')[index];
     if (alreadyClicked) {
         video.pause();
         alreadyClicked = !alreadyClicked;
@@ -23,8 +23,8 @@ function startVideo() {
     }
 }
 
-function restartVideo() {
-    const video = document.getElementsByTagName('video')[0];
+function restartVideo(index:any) {
+    const video = document.getElementsByTagName('video')[index];
     video.currentTime = 0;
 }
 
@@ -34,16 +34,16 @@ export const BigCards = (prop:any) => {
     return (
         <>
             <div className="CardContainer">
-            <div className="BigCard" style={blackCard}>
+            <div className="BigCard" style={whiteCard}>
                 <p>{prop.upperTitle1}</p>
                 <h2>{prop.title1}</h2>
                 <p>{prop.comp1}</p>
             </div>  
-            <div className="BigCard" style={whiteCard}>
+            <div className="BigCard" style={blackCard}>
                 <p>{prop.upperTitle2} </p>
                 <h2>{prop.title2}</h2>
                 <div className="VideoContainer">
-                <video controls={false} autoPlay  onClick={startVideo} onDoubleClick={restartVideo}>
+                <video controls={false} autoPlay  onClick={() => startVideo(prop.indiceVideo)} onDoubleClick={() => restartVideo(prop.indiceVideo)}>
                     <source type="video/mp4" src={video1} />
                     Your browser does not support the video element.
                 </video>
@@ -55,17 +55,17 @@ export const BigCards = (prop:any) => {
         return (
             <>
             <div className="CardContainer">
-            <div className="BigCard" style={whiteCard}>
+            <div className="BigCard" style={blackCard}>
                 <p>{prop.upperTitle1}</p>
                 <h2>{prop.title1}</h2>
                 <div className="VideoContainer">
-                <video controls={false} autoPlay  onClick={startVideo} onDoubleClick={restartVideo}>
+                <video controls={false} autoPlay  onClick={() => startVideo(prop.indiceVideo)} onDoubleClick={() => restartVideo(prop.indiceVideo)}>
                     <source type="video/mp4" src={video1} />
                     Your browser does not support the video element.
                 </video>
       </div>
             </div>  
-            <div className="BigCard" style={blackCard}>
+            <div className="BigCard" style={whiteCard}>
                 <p>{prop.upperTitle2} </p>
                 <h2>{prop.title2}</h2>
                 <p>{prop.comp2}</p>

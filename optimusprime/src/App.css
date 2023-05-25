@@ -23,6 +23,7 @@ body {
   align-items: center;
   max-width: 1300px;
   width: 100%;
+  margin: auto;
 }
 
 .column {
@@ -111,11 +112,18 @@ p.SubTitle{
   border-radius: 30px;
   transform: scale(1.05);
 }
+div.BigCard > p, div.SmallCard > p{
+  margin: 10px 0px 0px 0px;
+}
+div.VideoContainer > video{
+  margin: 0px;
+}
+
 
 .SmallCard{
   background-color: #ffffff;
   border-radius: 15px;
-  padding: 0px 20px;
+  padding:  20px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -183,8 +191,12 @@ div.Footer > p{
 
   .column{
     height: 200px;
-    padding: 0px 10px;
+    padding: 10px 20px;
     margin-bottom: 30px;
+  }
+
+  .TeamImage{
+    max-width: 80px;
   }
 }
   
