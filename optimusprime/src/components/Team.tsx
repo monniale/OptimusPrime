@@ -8,7 +8,6 @@ export const Team = () => {
   return (
     <>
       <div className="Team">
-      <h2 className="SubHeader">Ci Presentiamo</h2>
         <div className="row">
           <div className="column">
             <img src={benve} alt="" className="TeamImage"/>

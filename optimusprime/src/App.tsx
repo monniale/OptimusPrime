@@ -5,7 +5,8 @@ import { Video } from './components/Video';
 import { BigCards } from './components/BigCards';
 
 import './App.css';
-import { SmallCard } from './components/SmallCard';
+import { SmallCards } from './components/SmallCards';
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -22,21 +23,19 @@ function App() {
 
       <h2 className="SubHeader">Come Abbiamo Proceduto</h2>
       
+      <SmallCards order="0" upperTitle1="Problema" title1="Titolo dell'Esercizio" comp1="prova" upperTitle2="BrainStorming" title2="Cosa abbiamo pensato?" comp2="prova" />
+      <SmallCards order="1" upperTitle1="Problema" title1="Titolo dell'Esercizio" comp1="prova" upperTitle2="BrainStorming" title2="Cosa abbiamo pensato?" comp2="prova" />
+
       
-      <div className='CardContainer'>
-      <SmallCard title="Titolo" subtitle="Sottotitolo" comp="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi repellendus ipsum tempora repudiandae enim facilis, nesciunt tempore maxime dicta doloribus atque debitis eaque impedit deleniti voluptas. At, doloribus commodi." />
-      <SmallCard title="Titolo" subtitle="Sottotitolo" comp="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi repellendus ipsum tempora repudiandae enim facilis, nesciunt tempore maxime dicta doloribus atque debitis eaque impedit deleniti voluptas. At, doloribus commodi." />
-      <SmallCard title="Titolo" subtitle="Sottotitolo" comp="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi repellendus ipsum tempora repudiandae enim facilis, nesciunt tempore maxime dicta doloribus atque debitis eaque impedit deleniti voluptas. At, doloribus commodi." />
-      <SmallCard title="Titolo" subtitle="Sottotitolo" comp="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi repellendus ipsum tempora repudiandae enim facilis, nesciunt tempore maxime dicta doloribus atque debitis eaque impedit deleniti voluptas. At, doloribus commodi." />
-      </div>
+      
 
       <h2 className="SubHeader">Ecco la Soluzione Completa</h2>
-
       <Video></Video>
 
-    
-      
+      <h2 className="SubHeader">Il Nostro Team</h2>
       <Team></Team>
+
+      <Footer />
     </div>
   );
 }

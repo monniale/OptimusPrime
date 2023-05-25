@@ -21,17 +21,24 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  max-width: 1300px;
+  width: 100%;
 }
 
 .column {
   height: 250px;
-  padding-top: 20px;
+  padding: 0px 30px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px 10px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 18px;
+  background: linear-gradient(225deg, #ffffff, #e6e6e6);
+  box-shadow:  -17px 17px 30px #b0b0b0,
+             17px -17px 30px #ffffff;
 }
 
 .TeamImage {
@@ -48,7 +55,7 @@ body {
 
 
 iframe{
-  margin: 50px 0px;
+  margin: 20px 0px;
   box-shadow: #1d1d1fb6 5px 5px 10px 0px;
 }
 h1{
@@ -67,7 +74,7 @@ h2.SubHeader{
   font-size: 3rem;
   align-items: center;
   text-align: center;
-  padding: 50px 20px 0px 20px;
+  padding: 80px 20px 30px 20px;
   margin: auto;
 }
 
@@ -102,7 +109,7 @@ p.SubTitle{
 .SmallCard{
   background-color: #ffffff;
   border-radius: 15px;
-  padding: 20px;
+  padding: 0px 20px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -116,8 +123,9 @@ p.SubTitle{
               transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
-.SmallCardSubTitle{
-  color: #0066cc;
+.SmallCard:hover{
+  border-radius: 30px;
+  transform: scale(1.05);
 }
 
 
@@ -125,7 +133,6 @@ p.SubTitle{
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  gap: 10px; /* spazio tra le card */
 }
 
 video{
@@ -138,6 +145,15 @@ video{
   align-items: center;
   flex: 1;
   max-width: 400px;
+}
+
+div.Footer > p{
+  font-size: 0.75rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: #86868b;
 }
 
 
