@@ -15,7 +15,7 @@ export const Team = () => {
             <p className="SubTeam">ReactDev</p>
           </div>
           <div className="column">
-            <img src={monni} alt="" className="TeamImage"/>
+            <img src={monni} alt="" className="TeamImage Monni"/>
             <p>Monni Alessandro</p>
             <p className="SubTeam">ReactDev</p>
           </div>

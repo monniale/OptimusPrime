@@ -50,7 +50,9 @@ body {
 
 .TeamImage {
   max-width: 100px;
-  aspect-ratio: 1/1.1;
+}
+.Monni{
+  aspect-ratio: 1/1.3;
 }
 
 .SubTeam {

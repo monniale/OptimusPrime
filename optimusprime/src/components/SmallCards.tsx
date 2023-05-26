@@ -1,5 +1,5 @@
 import React from 'react';
-import video1 from '../images/monnii.webm';;
+import video1 from '../images/monnii.mp4';;
 
 const blackCard = {
     backgroundColor: '#000',
