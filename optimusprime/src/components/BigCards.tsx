@@ -1,5 +1,8 @@
 import React from "react";
 import videomonni from "../images/video-monni.mp4";
+import videoandrea from "../images/video-andrea.mp4";
+
+import pensiero1 from "../images/pensiero_01.jpg";
 
 const blackCard = {
   backgroundColor: "#000",
@@ -36,7 +39,10 @@ export const BigCards = (prop: any) => {
           <div className="BigCard" style={whiteCard}>
             <p>{prop.upperTitle1}</p>
             <h2>{prop.title1}</h2>
-            <p>{prop.comp1}</p>
+            <p className="LaTex">
+              Fra tutti i recipienti a forma cilindrica di uguale superficie S,
+              determina quello di volume massimo
+            </p>
           </div>
           <div className="BigCard" style={blackCard}>
             <p>{prop.upperTitle2} </p>
@@ -48,7 +54,7 @@ export const BigCards = (prop: any) => {
                 onClick={() => startVideo(prop.indiceVideo)}
                 onDoubleClick={() => restartVideo(prop.indiceVideo)}
               >
-                <source type="video/mp4" src={videomonni} />
+                <source type="video/mp4" src={videoandrea} />
                 Your browser does not support the video element.
               </video>
             </div>
@@ -61,7 +67,6 @@ export const BigCards = (prop: any) => {
       <>
         <div className="CardContainer">
           <div className="BigCard" style={blackCard}>
-            <p>{prop.upperTitle1}</p>
             <h2>{prop.title1}</h2>
             <div className="VideoContainer">
               <video
@@ -78,7 +83,7 @@ export const BigCards = (prop: any) => {
           <div className="BigCard" style={whiteCard}>
             <p>{prop.upperTitle2} </p>
             <h2>{prop.title2}</h2>
-            <p>{prop.comp2}</p>
+            <img src={pensiero1}></img>
           </div>
         </div>
       </>
