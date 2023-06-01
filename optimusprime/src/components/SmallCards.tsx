@@ -1,5 +1,6 @@
 import React from "react";
 import videoriccardo from "../images/video-riccardo.mp4";
+import videothomas from "../images/video-thomas.mp4";
 
 import pensiero2 from "../images/pensiero_02.jpg";
 import pensiero3 from "../images/pensiero_03.jpg";
@@ -77,7 +78,7 @@ export const SmallCards = (prop: any) => {
                 onClick={() => startVideo(prop.indiceVideo)}
                 onDoubleClick={() => restartVideo(prop.indiceVideo)}
               >
-                <source type="video/mp4" src={videoriccardo} />
+                <source type="video/mp4" src={videothomas} />
                 Your browser does not support the video element.
               </video>
             </div>
